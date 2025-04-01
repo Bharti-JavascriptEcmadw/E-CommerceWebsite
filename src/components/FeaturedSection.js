@@ -21,16 +21,16 @@ export default function FeaturedSection() {
         </p>
         
         {/* CTA Buttons - Responsive */}
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
+        <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-8">
           <Link
             href="/products"
-            className="bg-blue-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-10 rounded-lg shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-300"
+            className="bg-blue-600 text-white font-semibold py-3 sm:py-4 px-6 sm:px-10 rounded-lg shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
           >
             🛍 Shop Now
           </Link>
           <Link
             href="/sales"
-            className="bg-gray-900 text-white font-semibold py-3 sm:py-4 px-6 sm:px-10 rounded-lg shadow-lg hover:bg-gray-800 hover:shadow-xl transition-all duration-300"
+            className="bg-gray-900 text-white font-semibold py-3 sm:py-4 px-6 sm:px-10 rounded-lg shadow-lg hover:bg-gray-800 hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
           >
             🔥 View Sales
           </Link>

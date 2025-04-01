@@ -37,34 +37,34 @@ export default function Banner1() {
 
       {/* Hero Section */}
       <section className="text-center py-16 sm:py-20 bg-gray-50 px-4">
-        <h2 className="text-3xl sm:text-4xl font-bold">Home Decor</h2>
-        <p className="text-lg mt-2">From $299.00</p>
-        <button className="mt-4 px-6 py-2 bg-black text-white rounded-md">Explore Items</button>
+        <h2 className="text-3xl sm:text-4xl font-bold text-xl">Home Decor</h2>
+        <p className="text-lg mt-2 text-sm">From $299.00</p>
+        <button className="mt-4 px-6 py-2 bg-black text-white rounded-md text-xs">Explore Items</button>
       </section>
 
       {/* Offers */}
-      <section className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 py-10 px-4">
+      <section className="container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 py-10 px-4">
         <div className="bg-gray-100 p-6 rounded-lg text-center">
-          <h3 className="text-xl font-bold">30% Flat Sale</h3>
-          <p>Use code: <span className="text-red-500">HOT30</span></p>
-          <button className="mt-2 px-4 py-2 bg-yellow-500 text-black rounded-md">Start Shopping</button>
+          <h3 className="text-xl font-bold text-sm">30% Flat Sale</h3>
+          <p className="text-xs">Use code: <span className="text-red-500">HOT30</span></p>
+          <button className="mt-2 px-4 py-2 bg-yellow-500 text-black rounded-md text-xs">Start Shopping</button>
         </div>
         <div className="bg-gray-100 p-6 rounded-lg text-center">
-          <h3 className="text-xl font-bold">10% Flat Sale</h3>
-          <p>Save 20% on orders over $2500</p>
-          <button className="mt-2 px-4 py-2 bg-yellow-500 text-black rounded-md">Start Shopping</button>
+          <h3 className="text-xl font-bold text-sm">10% Flat Sale</h3>
+          <p className="text-xs">Save 20% on orders over $2500</p>
+          <button className="mt-2 px-4 py-2 bg-yellow-500 text-black rounded-md text-xs">Start Shopping</button>
         </div>
       </section>
 
       {/* Product List */}
       <section className="container mx-auto py-10 px-4">
-        <h2 className="text-2xl font-bold text-center">Featured Items</h2>
+        <h2 className="text-2xl font-bold text-center text-lg">Featured Items</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
           {products.map((product) => (
             <div key={product.id} className="border p-4 rounded-lg shadow-sm">
               <img src={product.image} alt={product.name} className="w-full h-40 sm:h-48 object-cover rounded-md" />
-              <h3 className="text-lg font-bold mt-2">{product.name}</h3>
-              <p className="text-gray-600">${product.price}</p>
+              <h3 className="text-lg font-bold mt-2 text-sm">{product.name}</h3>
+              <p className="text-gray-600 text-xs">${product.price}</p>
             </div>
           ))}
         </div>

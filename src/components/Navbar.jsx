@@ -59,9 +59,8 @@ export default function Navbar() {
 
           {/* Center: Category Dropdown + Search Bar */}
           <div className="flex items-center w-full md:w-1/2 space-x-2 relative mt-4 md:mt-0">
-
             {/* Category Dropdown */}
-            <div className="relative w-1/3 md:w-auto">
+            <div className="relative w-full sm:w-1/3 md:w-auto">
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 className="bg-gray-800 px-4 py-2 rounded-md flex items-center space-x-2 w-full hover:bg-gray-700"

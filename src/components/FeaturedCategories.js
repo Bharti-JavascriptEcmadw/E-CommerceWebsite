@@ -23,7 +23,7 @@ export default function FeaturedCategories() {
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
           {categories.map((category, index) => (
             <Link key={index} href={category.link}>
-              <button className="w-full sm:w-auto px-6 py-3 bg-blue-600 text-white text-base sm:text-lg font-semibold rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300">
+              <button className="w-full sm:w-48 px-6 py-3 bg-blue-600 text-white text-base sm:text-lg font-semibold rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg transition-all duration-300">
                 {category.name}
               </button>
             </Link>
